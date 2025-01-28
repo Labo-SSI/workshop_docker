@@ -37,6 +37,8 @@ Ce répertoire contient :
          POSTGRES_USER: user
          POSTGRES_PASSWORD: password
          POSTGRES_DB: mydb
+       volumes:
+         - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
    ```
 
 2. **Explications** :
@@ -49,7 +51,7 @@ Ce répertoire contient :
 ### 3. Lancer les conteneurs
 
 1. Exécutez la commande suivante :
-   `docker-compose up`
+   `docker-compose up --build`
 2. Une fois les services démarrés :
    - L'application Flask est accessible sur [http://localhost:5000](http://localhost:5000).
 

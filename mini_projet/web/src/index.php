@@ -1,8 +1,5 @@
 <?php
-$servername = "mysql";
-$username = "user";
-$password = "password";
-$dbname = "mydb";
+require_once("./config.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
