@@ -69,7 +69,9 @@ Docker Compose (inclus avec Docker Desktop).
 ## Ressources utiles
 
 [Documentation officielle de Docker](https://docs.docker.com/)
+
 [Docker Hub](https://hub.docker.com/)
+
 [Guide sur Docker Compose](https://docs.docker.com/compose/gettingstarted/)
 
 ## Licence
