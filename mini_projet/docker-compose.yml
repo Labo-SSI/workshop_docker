@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  php:
+    image: php:7.4-apache
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_NAME=mydb
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: mydb
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
