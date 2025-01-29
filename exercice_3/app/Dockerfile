@@ -7,7 +7,7 @@ WORKDIR /app
 # Copier les fichiers de l'application dans le conteneur
 COPY . /app
 
-RUN apt update -y && apt install -y libpq-dev
+RUN apt update -y && apt install -y gcc libpq-dev
 
 # Installer les dépendances Python nécessaires
 RUN pip install -r requirements.txt
