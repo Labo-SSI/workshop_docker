@@ -39,7 +39,7 @@ Dans cet exercice, vous allez apprendre à utiliser des commandes Docker de base
 ### 3. Lancer une application Flask
 
 1. Lancez une application Flask en utilisant une image existante :
-   `docker run -d -p 5000:5000 tiangolo/hello-world`
+   `docker run -d -p 5000:5000 digitalocean/flask-helloworld`
 2. Ouvrez votre navigateur et rendez-vous sur [http://localhost:5000](http://localhost:5000).
 3. Pour arrêter le conteneur :
    - Trouvez son ID avec :
